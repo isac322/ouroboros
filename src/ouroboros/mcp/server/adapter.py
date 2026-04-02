@@ -444,7 +444,7 @@ class MCPServerAdapter:
         try:
             from mcp.server.fastmcp import FastMCP
         except ImportError as e:
-            msg = "mcp package not installed. Install with: pip install mcp"
+            msg = "mcp package not installed. Install with: pip install 'ouroboros-ai[mcp]'"
             raise ImportError(msg) from e
 
         # Pass host/port at construction time — FastMCP reads these from
